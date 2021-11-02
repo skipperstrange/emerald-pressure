@@ -12,11 +12,12 @@ html {
     --background-color: ;
     --danger: rgb(250, 110, 67);
     --black: #222;
-    --charcoal: ;
+    --charcoal: #2b2b2b;
     --grey1: #3a3b3c;
     --grey: #666;
     --grey3: #828282;
     --grey4: #eceff7;
+    --grey5: #f2f2f2;
     --green: #059284;
     --primary-light: #4784d3;
     --primary-lighter: #b4ccfa;
@@ -25,6 +26,14 @@ html {
 
 .alt-bg {
     background: var(--grey4);
+}
+
+.alt-bg-light {
+    background: var(--grey5);
+}
+
+.primary-color {
+    color: var(--primary);
 }
 
 body {
@@ -570,7 +579,7 @@ a:hover {
 
 .section {
     clear: both;
-    margin: 3.2rem 0px;
+    margin: 3.2rem 0px 0px;
     padding-bottom: 2rem;
 }
 
@@ -584,7 +593,7 @@ a:hover {
 }
 
 .section hr {
-    border: 1px solid var(--primary-lightG);
+    border-bottom: 1px solid var(--primary-light);
 }
 
 .section ul {
@@ -595,6 +604,16 @@ a:hover {
 .section ul li {
     font-size: larger;
     margin-bottom: .3rem;
+}
+
+.section .contacts p {
+    line-height: .5rem;
+}
+
+.section .contacts h1 {
+    color: var(--primary-light);
+    font-size: 3rem;
+    margin: 1.5rem auto;
 }
 
 .section ul li .icon {
@@ -649,14 +668,25 @@ a:hover {
     text-shadow: none;
 }
 
+.ticker {
+    background: url('../images/ticker-2.jpeg');
+    margin-top: 0px;
+    padding: 4rem 0px 3rem;
+    color: var(--white);
+}
+
 .btn {
     border-radius: 0px;
 }
 
 div .services-card {
     font-size: .8rem;
-    text-align: center;
     padding-top: 1.6rem;
+}
+
+div .services-card h3.title {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .card {
@@ -711,6 +741,42 @@ div .services-card {
     .section h1 {
         font-size: 1.7rem;
     }
+}
+
+.business-card {
+    font-size: 80%;
+    height: 9rem;
+}
+
+.business-card-info {
+    padding: 1rem 0px 0px 1.2rem;
+    height: 100%;
+}
+
+.business-card hr {
+    border-bottom: var(--grey3) solid 1px;
+    padding: 0px;
+    width: 60%;
+}
+
+.business-card .business-card .social-links {
+    color: var(--primary);
+}
+
+.business-card .business-card-img {}
+
+.business-card-img {
+    height: 9rem;
+    overflow: hidden;
+}
+
+.business-card-img img {
+    height: 100%;
+    background-size: cover;
+}
+
+.bottomline {
+    border-bottom: 1px var(--charcoal) solid;
 }
 
 @media screen and (max-width: 414px) {
