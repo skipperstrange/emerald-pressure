@@ -11,8 +11,8 @@ html {
     --white: rgb(253, 253, 253);
     --background-color: ;
     --danger: rgb(250, 110, 67);
-    --black: #222;
-    --charcoal: #2b2b2b;
+    --black: #000;
+    --charcoal: #222;
     --grey1: #3a3b3c;
     --grey: #666;
     --grey3: #828282;
@@ -131,6 +131,7 @@ a:hover {
     line-height: 0;
     top: -7px;
     position: relative;
+    padding-bottom: 0px;
 }
 
 .site-navbar .site-logo a {
@@ -606,6 +607,10 @@ a:hover {
     margin-bottom: .3rem;
 }
 
+.section .contacts {
+    font-size: 80%;
+}
+
 .section .contacts p {
     line-height: .5rem;
 }
@@ -719,30 +724,6 @@ div .services-card h3.title {
     color: var(--white);
 }
 
-@media screen and (max-width: 991px) {
-    .site-navbar .site-logo a {
-        font-size: 18px;
-    }
-    .brand .slogan {
-        font-size: 12px;
-    }
-    .header-content h1 {
-        font-size: 2rem;
-        margin-top: 2rem;
-    }
-    .hero {
-        height: 180vh;
-        width: 100%;
-    }
-    .section ul li {
-        font-size: medium;
-        margin-bottom: 0rem;
-    }
-    .section h1 {
-        font-size: 1.7rem;
-    }
-}
-
 .business-card {
     font-size: 80%;
     height: 9rem;
@@ -779,9 +760,72 @@ div .services-card h3.title {
     border-bottom: 1px var(--charcoal) solid;
 }
 
+footer {
+    padding-top: 2rem;
+    background: var(--black);
+    color: var(--white);
+}
+
+footer h4 {
+    font-size: 1rem;
+}
+
+footer .social-media-links a {
+    font-size: 1.5rem;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+footer .copy {
+    text-align: right;
+    font-size: 11px;
+    padding: 2rem 0px;
+}
+
+@media screen and (max-width: 991px) {
+    .site-navbar .site-logo {
+        top: -2px;
+    }
+    .site-navbar .site-logo a {
+        font-size: 18px;
+    }
+    .brand .slogan {
+        font-size: 12px;
+    }
+    .header-content h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .hero {
+        height: 180vh;
+        width: 100%;
+    }
+    .section ul li {
+        font-size: medium;
+        margin-bottom: 0rem;
+    }
+    .section h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .site-navbar .site-logo {
+        top: 0px;
+    }
+    .site-navbar .site-logo a {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    footer .copy {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 414px) {
     .site-navbar .site-logo a {
         font-size: 16px;
+        line-height: 16px;
     }
     .brand .slogan {
         font-size: 10px;
@@ -791,5 +835,11 @@ div .services-card h3.title {
     }
     .section h1 {
         font-size: 1.4rem;
+    }
+    footer h4 {
+        font-size: 1.0rem;
+    }
+    footer .copy {
+        text-align: center;
     }
 }
